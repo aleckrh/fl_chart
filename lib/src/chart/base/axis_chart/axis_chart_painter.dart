@@ -13,7 +13,8 @@ abstract class AxisChartPainter<D extends AxisChartData> extends BaseChartPainte
 
   Paint gridPaint;
 
-  AxisChartPainter(this.data) : super(data) {
+  AxisChartPainter(this.data, {FlTouchController touchController,}) :
+      super(data, touchController: touchController) {
     gridPaint = Paint()..style = PaintingStyle.fill;
   }
 
